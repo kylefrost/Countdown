@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CountdownViewController : UIViewController
+@interface CountdownViewController : UIViewController {
+    
+    NSDate *destinationDate;
+    
+    IBOutlet UILabel *countdownLabel;
+    
+    NSTimer *timer;
+    
+}
+
+-(void)updateLabel;
 
 @end

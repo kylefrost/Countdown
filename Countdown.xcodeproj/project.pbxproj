@@ -22,6 +22,10 @@
 		2793E44417DBE25D005FC2E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2793E42317DBE25D005FC2E5 /* UIKit.framework */; };
 		2793E44C17DBE25D005FC2E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2793E44A17DBE25D005FC2E5 /* InfoPlist.strings */; };
 		2793E44E17DBE25D005FC2E5 /* CountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2793E44D17DBE25D005FC2E5 /* CountdownTests.m */; };
+		27D30CFB17DBEB290065FB3D /* iPhone_640x1136_dim.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D30CFA17DBEB290065FB3D /* iPhone_640x1136_dim.png */; };
+		27D30CFD17DBED0C0065FB3D /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D30CFC17DBED0C0065FB3D /* Icon-120.png */; };
+		27ED428D17E9022400AD917A /* iPhone5s.png in Resources */ = {isa = PBXBuildFile; fileRef = 27ED428B17E9022400AD917A /* iPhone5s.png */; };
+		27ED428E17E9022400AD917A /* Label.png in Resources */ = {isa = PBXBuildFile; fileRef = 27ED428C17E9022400AD917A /* Label.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		2793E44917DBE25D005FC2E5 /* CountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CountdownTests-Info.plist"; sourceTree = "<group>"; };
 		2793E44B17DBE25D005FC2E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2793E44D17DBE25D005FC2E5 /* CountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTests.m; sourceTree = "<group>"; };
+		27D30CFA17DBEB290065FB3D /* iPhone_640x1136_dim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone_640x1136_dim.png; sourceTree = "<group>"; };
+		27D30CFC17DBED0C0065FB3D /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		27ED428B17E9022400AD917A /* iPhone5s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhone5s.png; sourceTree = "<group>"; };
+		27ED428C17E9022400AD917A /* Label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Label.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,10 @@
 		2793E42617DBE25D005FC2E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27ED428B17E9022400AD917A /* iPhone5s.png */,
+				27ED428C17E9022400AD917A /* Label.png */,
+				27D30CFC17DBED0C0065FB3D /* Icon-120.png */,
+				27D30CFA17DBEB290065FB3D /* iPhone_640x1136_dim.png */,
 				2793E42717DBE25D005FC2E5 /* Countdown-Info.plist */,
 				2793E42817DBE25D005FC2E5 /* InfoPlist.strings */,
 				2793E42B17DBE25D005FC2E5 /* main.m */,
@@ -203,6 +215,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kyle Frost";
 				TargetAttributes = {
+					2793E41B17DBE25D005FC2E5 = {
+						DevelopmentTeam = 34UZ7Y2KSW;
+					};
 					2793E43F17DBE25D005FC2E5 = {
 						TestTargetID = 2793E41B17DBE25D005FC2E5;
 					};
@@ -235,7 +250,11 @@
 				2793E43617DBE25D005FC2E5 /* Main_iPad.storyboard in Resources */,
 				2793E43B17DBE25D005FC2E5 /* Images.xcassets in Resources */,
 				2793E43317DBE25D005FC2E5 /* Main_iPhone.storyboard in Resources */,
+				27ED428D17E9022400AD917A /* iPhone5s.png in Resources */,
+				27ED428E17E9022400AD917A /* Label.png in Resources */,
 				2793E42A17DBE25D005FC2E5 /* InfoPlist.strings in Resources */,
+				27D30CFD17DBED0C0065FB3D /* Icon-120.png in Resources */,
+				27D30CFB17DBEB290065FB3D /* iPhone_640x1136_dim.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Countdown/Countdown-Prefix.pch";
 				INFOPLIST_FILE = "Countdown/Countdown-Info.plist";
@@ -402,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Countdown/Countdown-Prefix.pch";
 				INFOPLIST_FILE = "Countdown/Countdown-Info.plist";
@@ -469,6 +490,7 @@
 				2793E45317DBE25D005FC2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2793E45417DBE25D005FC2E5 /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +499,7 @@
 				2793E45617DBE25D005FC2E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
