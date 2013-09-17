@@ -47,6 +47,7 @@
                     </view>
                     <connections>
                         <outlet property="countdownLabel" destination="f8d-e3-Azr" id="mcA-bc-Cad"/>
+                        <outlet property="myBar" destination="MFA-z3-SJx" id="EwA-fA-RRp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

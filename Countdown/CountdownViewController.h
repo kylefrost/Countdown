@@ -20,4 +20,7 @@
 
 -(void)updateLabel;
 
+@property (weak, nonatomic) IBOutlet UINavigationBar *myBar;
+@property(nonatomic,readonly) UIBarPosition barPosition;
+
 @end

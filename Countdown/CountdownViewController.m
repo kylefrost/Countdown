@@ -18,10 +18,24 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+    self.myBar.delegate = self;
     
     destinationDate = [NSDate dateWithTimeIntervalSince1970:1379419200];
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateLabel) userInfo:nil repeats:YES];
+    
+}
+
+- (UIBarPosition)positionForBar:(id <UIBarPositioning>)bar {
+    
+    return UIBarPositionTopAttached;
+    
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    
+    return UIStatusBarStyleLightContent;
     
 }
 
